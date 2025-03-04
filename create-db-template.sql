@@ -1,6 +1,6 @@
 CREATE DATABASE Projeto_novos_saberes
     DEFAULT CHARACTER SET = 'utf8mb4';
-    USE Projeto_novos_saberes
+    USE Projeto_novos_saberes;
 
 CREATE TABLE aluno (
     id_aluno INT AUTO_INCREMENT PRIMARY KEY,
@@ -35,7 +35,7 @@ VALUES
 ('Sofia', 18, 'Baixa renda', 'Maranhão', 'sofia.ma@email.com','Sociologia' , 'Ensino Médio Completo', 75, 'Mediano'),  
 ('Christopher', 18, 'Baixa renda', 'Acre', 'chrisgoat@gmail.com','Sociologia' , 'Ensino Médio Completo', 79, 'Mediano'); 
 
-INSERT INTO(Cursos) 
+INSERT INTO Cursos
 VALUES
 ('Projeto de vida'),
 ('Gestão de renda'),
@@ -54,3 +54,23 @@ VALUES
 ('Direito');
 
 TRUNCATE TABLE aluno;
+
+CREATE TABLE Supervisores (
+    ID_supervisor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    contato VARCHAR(50),
+    area_supervisionada VARCHAR(100),
+    equipe_responsavel VARCHAR(100),
+    relatorio_avaliacao TEXT
+);
+
+INSERT INTO Supervisores (nome, contato, area_supervisionada, equipe_responsavel, relatorio_avaliacao)
+VALUES
+  ('João Silva', 'joao.silva@gmail.com', 'Acompanhamento e suporte aos alunos', 'Equipe A', 'João tem demonstrado um excelente acompanhamento e suporte aos alunos, garantindo que todos estejam bem orientados e recebam o apoio necessário.'),
+  ('Mathias Cardoso', 'mathias.cardoso@gmail.com', 'Professores e voluntários', 'Equipe B', 'Mathias tem sido fundamental no gerenciamento de professores e voluntários, promovendo uma excelente comunicação e cooperação entre todos os membros.'),
+  ('Anny Lorenço', 'anny.lorenco@gmail.com', 'Gestão das atividades', 'Equipe C', 'Anny tem gerido as atividades de forma eficiente, assegurando que todas as tarefas sejam cumpridas dentro do prazo e com alta qualidade.'),
+  ('Heloisa Souza', 'heloisa.souza@gmail.com', 'Avaliação do projeto', 'Equipe D', 'Heloisa tem se destacado na avaliação do projeto, oferecendo feedbacks construtivos que contribuem significativamente para o aprimoramento contínuo.'),
+  ('Luiz Soares', 'luiz.soares@gmail.com', 'Missão do projeto', 'Equipe E', 'Luiz tem liderado com sucesso a missão do projeto, sempre focado nos objetivos principais e garantindo que todos os esforços estejam alinhados à visão do projeto.'),
+  ('Jusara Almeida', 'jusara.almeida@gmail.com', 'Doações e relacionamentos', 'Equipe F', 'Jusara tem gerido de forma exemplar as doações e os relacionamentos, sempre mantendo um canal de comunicação transparente e eficaz com os doadores e parceiros.');
+
+SELECT * FROM Supervisores;
