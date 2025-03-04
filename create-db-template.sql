@@ -74,3 +74,20 @@ VALUES
   ('Jusara Almeida', 'jusara.almeida@gmail.com', 'Doações e relacionamentos', 'Equipe F', 'Jusara tem gerido de forma exemplar as doações e os relacionamentos, sempre mantendo um canal de comunicação transparente e eficaz com os doadores e parceiros.');
 
 SELECT * FROM Supervisores;
+
+CREATE TABLE Empresas_parceiras (
+  ID_empresas INT PRIMARY KEY,
+  Nome VARCHAR(100),
+  Setor_de_atuacao VARCHAR(100),
+  Tipo_de_parceria VARCHAR(100),
+  Responsavel VARCHAR(100),
+  Beneficios VARCHAR(100)
+);
+
+INSERT INTO Empresas_parceiras (ID_empresas, Nome, Setor_de_atuacao, Tipo_de_parceria, Responsavel, Beneficios)
+VALUES
+  (1, 'TechCorp', 'Tecnologia', 'Patrocínio', 'Ana Silva', 'Apoio financeiro'),
+  (2, 'EducaMais', 'Educação', 'Parceria Educacional', 'Carlos Souza', 'Cursos gratuitos'),
+  (3, 'HealthCare', 'Saúde', 'Doações', 'Marina Lopes', 'Equipamentos médicos');
+
+SELECT * FROM Empresas_parceiras;
