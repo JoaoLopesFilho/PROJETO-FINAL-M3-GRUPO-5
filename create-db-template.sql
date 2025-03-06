@@ -98,3 +98,10 @@ VALUES
   (3, 'HealthCare', 'Saúde', 'Doações', 'Marina Lopes', 'Equipamentos médicos');
 
 SELECT * FROM Empresas_parceiras;
+
+# contanto os alunos de acordo com o curso que estão matriculados#
+
+SELECT cursos, COUNT(*) AS total_cursos
+FROM aluno
+GROUP BY cursos;
+
