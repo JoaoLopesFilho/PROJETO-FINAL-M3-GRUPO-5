@@ -19,39 +19,46 @@ SELECT * FROM aluno;
 
 INSERT INTO aluno (Nome,Idade,Situacao,Endereco,Contato,Cursos,Escolaridade,Frequencia,Desempenho)
 VALUES 
-('Anderson', 17, 'Média renda', 'São Paulo', 'anderson674@gmail.com','Projeto de vida', 'Ensino medio', 89, 'Ótimo'),  
-('Felipe', 16, 'Baixa renda', 'São Paulo', 'felipeCD@gmail.com','Projeto de vida' , 'Ensino medio', 82, 'Ótimo'),  
-('Lucas', 18, 'Média renda', 'Santa Catarina', 'luscTHELAST@gmail.com','Direito' , 'Ensino medio completo', 94, 'Excelente'),  
-('Cristiano', 19, 'Baixa renda', 'São Paulo', 'criscris73@gmail.com', 'Sociologia', 'Ensino medio', 96, 'Excelente'),  
-('Luis', 19, 'Baixa renda', 'Espirito Santo', 'luisjr@gmail.com', 'Gestão de renda', 'Ensino Medio Completo', 78, 'Regular'),  
-('Ana', 22, 'Média renda', 'São Paulo', 'ana22@email.com','Direito' , 'Ensino Superior Incompleto', 85, 'Bom'),  
-('Carlos', 18, 'Baixa renda', 'Rio de Janeiro', 'carlos_rj@email.com','Sociologia' , 'Ensino Médio', 70, 'Regular'),  
-('Mariana', 20, 'Alta renda', 'Minas Gerais', 'marianaCJ@email.com', 'Gestão de renda', 'Ensino Superior Completo', 95, 'Excelente'),  
-('João', 21, 'Baixa renda', 'Bahia', 'joaobahia@email.com', 'Gestão de renda', 'Ensino Médio Completo', 80, 'Bom'),  
-('Fernanda', 23, 'Média renda', 'Pernambuco', 'fernandape@email.com','Projeto de vida' ,  'Ensino Superior Incompleto', 88, 'Ótimo'),  
-('Roberto', 19, 'Baixa renda', 'Paraná', 'robertinho@email.com', 'Sociologia', 'Ensino Médio', 76, 'Regular'),  
-('Clara', 22, 'Alta renda', 'Santa Catarina', 'clara_sc@email.com', 'Sociologia', 'Ensino Superior Completo', 97, 'Excelente'),  
-('Miguel', 20, 'Média renda', 'Ceará', 'miguelce@email.com','Direito' , 'Ensino Superior Incompleto', 83, 'Bom'),  
-('Sofia', 18, 'Baixa renda', 'Maranhão', 'sofia.ma@email.com','Sociologia' , 'Ensino Médio Completo', 75, 'Mediano'),  
-('Christopher', 18, 'Baixa renda', 'Acre', 'chrisgoat@gmail.com','Sociologia' , 'Ensino Médio Completo', 79, 'Mediano'); 
+    ('Anderson', 17, 'Média renda', 'São Paulo', 'anderson674@gmail.com','Projeto de vida', 'Ensino medio', 89, 'Ótimo'),  
+    ('Felipe', 16, 'Baixa renda', 'São Paulo', 'felipeCD@gmail.com','Projeto de vida' , 'Ensino medio', 82, 'Ótimo'),  
+    ('Lucas', 18, 'Média renda', 'Santa Catarina', 'luscTHELAST@gmail.com','Direito' , 'Ensino medio completo', 94, 'Excelente'),  
+    ('Cristiano', 19, 'Baixa renda', 'São Paulo', 'criscris73@gmail.com', 'Sociologia', 'Ensino medio', 96, 'Excelente'),  
+    ('Luis', 19, 'Baixa renda', 'Espirito Santo', 'luisjr@gmail.com', 'Gestão de renda', 'Ensino Medio Completo', 78, 'Regular'),  
+    ('Ana', 22, 'Média renda', 'São Paulo', 'ana22@gmail.com','Direito' , 'Ensino Superior Incompleto', 85, 'Bom'),  
+    ('Carlos', 18, 'Baixa renda', 'Rio de Janeiro', 'carlos_rj@gmail.com','Sociologia' , 'Ensino Médio', 70, 'Regular'),  
+    ('Mariana', 20, 'Alta renda', 'Minas Gerais', 'marianaCJ@gmail.com', 'Gestão de renda', 'Ensino Superior Completo', 95, 'Excelente'),  
+    ('João', 21, 'Baixa renda', 'Bahia', 'joaobahia@gmail.com', 'Gestão de renda', 'Ensino Médio Completo', 80, 'Bom'),  
+    ('Fernanda', 23, 'Média renda', 'Pernambuco', 'fernandape@gmail.com','Projeto de vida' ,  'Ensino Superior Incompleto', 88, 'Ótimo'),  
+    ('Roberto', 19, 'Baixa renda', 'Paraná', 'robertinho@gmail.com', 'Sociologia', 'Ensino Médio', 76, 'Regular'),  
+    ('Clara', 22, 'Alta renda', 'Santa Catarina', 'clara_sc@gmail.com', 'Sociologia', 'Ensino Superior Completo', 97, 'Excelente'),  
+    ('Miguel', 20, 'Média renda', 'Ceará', 'miguelce@gmail.com','Direito' , 'Ensino Superior Incompleto', 83, 'Bom'),  
+    ('Sofia', 18, 'Baixa renda', 'Maranhão', 'sofia.ma@gmail.com','Sociologia' , 'Ensino Médio Completo', 75, 'Mediano'),  
+    ('Christopher', 18, 'Baixa renda', 'Acre', 'chrisgoat@gmail.com','Sociologia' , 'Ensino Médio Completo', 79, 'Mediano'); 
 
 INSERT INTO Cursos
 VALUES
-('Projeto de vida'),
-('Gestão de renda'),
-('Direito'),
-('Direito'),
-('Projeto de vida'),
-('Gestão de renda'),
-('Sociologia'),
-('Projeto de vida'),
-('Sociologia'),
-('sociologia'),
-('Direito'),
-('Gestão de renda'),
-('Gestão de renda'),
-('Direito'),
-('Direito');
+    ('Projeto de vida'),
+    ('Gestão de renda'),
+    ('Direito'),
+    ('Direito'),
+    ('Projeto de vida'),
+    ('Gestão de renda'),
+    ('Sociologia'),
+    ('Projeto de vida'),
+    ('Sociologia'),
+    ('sociologia'),
+    ('Direito'),
+    ('Gestão de renda'),
+    ('Gestão de renda'),
+    ('Direito'),
+    ('Direito');
+
+INSERT INTO aluno (Nome,Idade,Situacao,Endereco,Contato,Cursos,Escolaridade,Frequencia,Desempenho)
+VALUES
+    ('Antonio',20,'Alta renda','Piaui','Otoni3540@gmail.com','Direito','Ensino Superior Incompleto',90,'Excelente'),
+    ('Elayne',19,'Média renda','Céara','enyal3silvasilva@gmail.com','Sociologia','Ensino Superior Incompleto',97,'Excelente'),
+    ('Catarina',18,'Baixa Renda','São Paulo','thecat33@gmail.com','Gestão de renda','Ensino Médio Completo',100,'Excelente');
+
 
 TRUNCATE TABLE aluno;
 
