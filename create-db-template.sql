@@ -100,3 +100,12 @@ CREATE TABLE ONGs (
   Tipo_de_apoio VARCHAR(100),
   Projetos_conjuntos VARCHAR(200)
 );
+
+-- INSERT INTO ONGs (Nome, Area_de_atuacao, Contato_responsavel, Tipo_de_apoio, Projetos_conjuntos)
+-- VALUES
+-- ('Hope Foundation',   'Educação e Cidadania',   'Vanessa Silva',  'Materiais Didáticos', 'Projeto Crescer, Projeto Cidadania'),
+-- ('Amigos do Futuro',  'Desenvolvimento Social', 'Jonh Alex',  'Treinamentos',        'Projeto Jovem Aprendiz'),
+-- ('Mão Solidária',     'Assistência Social',     'Mariana Castro','Doações de Alimentos','Campanha Alimentar, Projeto Saúde'),
+-- ('Nova Chance',       'Reinserção Social',      'Pedro Almeida', 'Apoio Financeiro',    'Projeto Reintegração');
+
+-- SELECT * FROM ONGs;
