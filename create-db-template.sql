@@ -99,9 +99,27 @@ VALUES
 
 SELECT * FROM Empresas_parceiras;
 
+
 # contanto os alunos de acordo com o curso que estão matriculados#
 
 SELECT cursos, COUNT(*) AS total_cursos
 FROM aluno
 GROUP BY cursos;
 
+CREATE TABLE ONGs (
+  ID_ONG INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100),
+  Area_de_atuacao VARCHAR(100),
+  Contato_responsavel VARCHAR(100),
+  Tipo_de_apoio VARCHAR(100),
+  Projetos_conjuntos VARCHAR(200)
+);
+
+-- INSERT INTO ONGs (Nome, Area_de_atuacao, Contato_responsavel, Tipo_de_apoio, Projetos_conjuntos)
+-- VALUES
+-- ('Hope Foundation',   'Educação e Cidadania',   'Vanessa Silva',  'Materiais Didáticos', 'Projeto Crescer, Projeto Cidadania'),
+-- ('Amigos do Futuro',  'Desenvolvimento Social', 'Jonh Alex',  'Treinamentos',        'Projeto Jovem Aprendiz'),
+-- ('Mão Solidária',     'Assistência Social',     'Mariana Castro','Doações de Alimentos','Campanha Alimentar, Projeto Saúde'),
+-- ('Nova Chance',       'Reinserção Social',      'Pedro Almeida', 'Apoio Financeiro',    'Projeto Reintegração');
+
+-- SELECT * FROM ONGs;
