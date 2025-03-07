@@ -91,3 +91,12 @@ VALUES
   (3, 'HealthCare', 'Saúde', 'Doações', 'Marina Lopes', 'Equipamentos médicos');
 
 SELECT * FROM Empresas_parceiras;
+
+CREATE TABLE ONGs (
+  ID_ONG INT AUTO_INCREMENT PRIMARY KEY,
+  Nome VARCHAR(100),
+  Area_de_atuacao VARCHAR(100),
+  Contato_responsavel VARCHAR(100),
+  Tipo_de_apoio VARCHAR(100),
+  Projetos_conjuntos VARCHAR(200)
+);
