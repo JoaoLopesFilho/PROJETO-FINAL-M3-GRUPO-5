@@ -60,9 +60,13 @@ Isso garante que o banco seja criado corretamente antes das tabelas, e que as ta
 
 Para executar todos os scripts de schema em ordem:
 
+docker já faz essa execução
+
+exec manual =>
+
 ```sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/schema/00_create_database.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/schema/01_tables.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/schema/02_relationships.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/schema/03_constraints.sql
+/database/schema/00_create_database.sql
+/database/schema/01_tables.sql
+/database/schema/02_relationships.sql
+/database/schema/03_constraints.sql
 ```

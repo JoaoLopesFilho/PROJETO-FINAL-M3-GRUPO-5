@@ -36,14 +36,6 @@ Este arquivo contém cinco consultas pré-definidas que demonstram como extrair 
    - Ordenado por: nome do projeto, tipo de participante e nome do participante
    - Utiliza UNION ALL para combinar resultados
 
-## Exemplo de Uso
-
-Para executar as consultas existentes:
-
-```sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/queries/consultas_gerais.sql
-```
-
 ## Sugestões para Novas Consultas
 
 Algumas ideias para consultas adicionais que podem ser úteis:
