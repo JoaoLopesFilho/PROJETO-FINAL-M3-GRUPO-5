@@ -1,38 +1,40 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+about: Relate um problema para nos ajudar a melhorar
+title: '[BUG] '
+labels: 'bug'
 assignees: ''
-
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Descrição do Bug
+Uma descrição clara e concisa do que é o bug.
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Passos para Reproduzir
+Etapas para reproduzir o comportamento:
+1. Vá para '...'
+2. Clique em '....'
+3. Execute a query '....'
+4. Veja o erro
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Comportamento Esperado
+Uma descrição clara e concisa do que você esperava que acontecesse.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Screenshots
+Se aplicável, adicione screenshots para ajudar a explicar seu problema.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+## Ambiente
+- **Sistema Operacional:** [ex: Windows 10, macOS Monterey]
+- **Versão do MySQL/MariaDB:** [ex: MySQL 8.0]
+- **Cliente SQL usado:** [ex: MySQL Workbench 8.0]
+- **Método de instalação:** [ex: Docker, instalação local]
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+## Logs ou Mensagens de Erro
+```
+Cole aqui qualquer log ou mensagem de erro relevante
+```
 
-**Additional context**
-Add any other context about the problem here.
+## Contexto Adicional
+Adicione qualquer outro contexto sobre o problema aqui. Como o problema afeta seu uso do banco de dados?
+
+## Possível Solução
+Se você tem uma ideia de como resolver o problema, compartilhe aqui.
