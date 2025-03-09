@@ -1,4 +1,8 @@
-CREATE DATABASE IF NOT EXISTS Projeto_novos_saberes DEFAULT CHARACTER SET = 'utf8mb4';
+-- Garantir que a configuração de codificação seja aplicada em toda a conexão
+SET NAMES utf8mb4;
+SET CHARACTER SET utf8mb4;
+
+CREATE DATABASE IF NOT EXISTS Projeto_novos_saberes DEFAULT CHARACTER SET = 'utf8mb4' COLLATE = 'utf8mb4_unicode_ci';
 USE Projeto_novos_saberes;
 
 -- Criar tabelas principais

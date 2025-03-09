@@ -128,3 +128,20 @@ Se o Docker não estiver reconhecendo o arquivo `.env`:
    ```bash
    MYSQL_ROOT_PASSWORD=root MYSQL_DATABASE=Projeto_novos_saberes MYSQL_USER=admin MYSQL_PASSWORD=password MYSQL_PORT=3306 docker-compose up -d
    ```
+
+### Problemas com caracteres especiais (acentos, cedilha, etc.)
+
+Se você encontrar problemas com caracteres especiais nas consultas (como "CiÃªncia" em vez de "Ciência"):
+
+1. Verifique se seu cliente SQL está usando UTF-8 como codificação de conexão
+2. Para clientes gráficos como MySQL Workbench ou DBeaver, certifique-se de configurar a codificação da conexão para UTF-8
+3. Para conexões via terminal, você pode forçar o uso da codificação correta:
+   ```bash
+   docker exec -it projeto_novos_saberes_db mysql -uadmin -proot --default-character-set=utf8mb4 Projeto_novos_saberes
+   ```
+4. Se estiver usando uma aplicação para se conectar, certifique-se de incluir a configuração de charset na string de conexão:
+   ```
+   ?charset=utf8mb4
+   ```
+
+O docker-compose.yml já está configurado para usar UTF-8 por padrão, mas alguns clientes podem exigir configuração adicional.
