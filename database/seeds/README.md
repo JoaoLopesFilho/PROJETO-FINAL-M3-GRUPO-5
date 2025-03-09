@@ -55,14 +55,17 @@ Os scripts devem ser executados na ordem numérica para garantir que as chaves e
 
 Para executar todos os scripts de seeds em ordem:
 
+docker já trata automaticamente essas execuções
+
+em caso de exec manual =>
 ```sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/01_supervisores.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/02_alunos.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/03_professores.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/04_projetos.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/05_empresas.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/06_voluntarios.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/07_ongs.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/08_governo.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/seeds/09_relacionamentos.sql
+/database/seeds/01_supervisores.sql
+/database/seeds/02_alunos.sql
+/database/seeds/03_professores.sql
+/database/seeds/04_projetos.sql
+/database/seeds/05_empresas.sql
+/database/seeds/06_voluntarios.sql
+/database/seeds/07_ongs.sql
+/database/seeds/08_governo.sql
+/database/seeds/09_relacionamentos.sql
 ```
