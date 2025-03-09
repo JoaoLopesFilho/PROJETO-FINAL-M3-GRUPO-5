@@ -74,14 +74,17 @@ Os scripts devem ser executados na ordem numérica para garantir que todas as de
 
 Para criar todos os procedimentos armazenados:
 
+setup_completo - docker já trata essa execução
+
+para execução manual =>
 ```sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/01_inserir_supervisores.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/02_inserir_alunos.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/03_inserir_professores.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/04_inserir_projetos.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/05_inserir_empresas.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/06_inserir_voluntarios.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/07_inserir_ongs.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/08_inserir_governo.sql
-SOURCE c:/caminho/para/PROJETO-FINAL-M3-GRUPO-5/database/procedures/09_inserir_relacionamentos.sql
+/database/procedures/01_inserir_supervisores.sql
+/database/procedures/02_inserir_alunos.sql
+/database/procedures/03_inserir_professores.sql
+/database/procedures/04_inserir_projetos.sql
+/database/procedures/05_inserir_empresas.sql
+/database/procedures/06_inserir_voluntarios.sql
+/database/procedures/07_inserir_ongs.sql
+/database/procedures/08_inserir_governo.sql
+/database/procedures/09_inserir_relacionamentos.sql
 ```
