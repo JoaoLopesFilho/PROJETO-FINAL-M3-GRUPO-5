@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação do Projeto Novos Saberes
+    url: https://github.com/JoaoLopesFilho/PROJETO-FINAL-M3-GRUPO-5/blob/main/README.md
+    about: Consulte nossa documentação para informações detalhadas sobre o projeto.
+  - name: Política de Segurança
+    url: https://github.com/JoaoLopesFilho/PROJETO-FINAL-M3-GRUPO-5/blob/main/SECURITY.md
+    about: Por favor, leia nossa política de segurança para reportar vulnerabilidades.
+  - name: Dúvidas Gerais
+    url: mailto:it.jonhpaz@gmail.com
+    about: Entre em contato para dúvidas gerais que não se encaixam em nenhum dos modelos de issue.
