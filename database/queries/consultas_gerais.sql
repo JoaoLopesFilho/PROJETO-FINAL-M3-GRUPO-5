@@ -8,10 +8,12 @@ JOIN Projeto p ON ap.id_projeto = p.id_projeto
 ORDER BY a.nome;
 
 -- Consulta para listar professores e seus projetos
-SELECT pr.nome AS nome_professor, p.nome AS nome_projeto
+SELECT pr.nome AS nome_professor,
+       GROUP_CONCAT(p.nome SEPARATOR ', ') AS projetos
 FROM Professor pr
 JOIN Professor_Projeto pp ON pr.id_professor = pp.id_professor
 JOIN Projeto p ON pp.id_projeto = p.id_projeto
+GROUP BY pr.nome
 ORDER BY pr.nome;
 
 -- Consulta para listar alunos e seus supervisores
