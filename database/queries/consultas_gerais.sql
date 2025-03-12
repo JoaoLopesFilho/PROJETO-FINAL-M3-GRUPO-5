@@ -52,3 +52,31 @@ JOIN Professor prof ON pp.id_professor = prof.id_professor
 
 ORDER BY
     nome_projeto, tipo_participante, nome_participante;
+
+
+-- Consulta para ver quantos alunos com mais de 18 anos temos e se estão cursando ensino médio ou superior 
+--DevDg
+SELECT 
+    escolaridade, 
+    COUNT(*) AS quantidade_alunos
+FROM Aluno
+WHERE idade > 18 
+AND escolaridade IN ('Ensino Médio', 'Ensino Superior')
+GROUP BY escolaridade;
+
+
+-- Consulta para contar quantos alunos têm desempenho classificado como "Excelente", "Bom", "Regular" ou "Ruim" 
+--DevDg
+SELECT desempenho, COUNT(*) AS quantidade_alunos
+FROM Aluno
+GROUP BY desempenho
+ORDER BY quantidade_alunos DESC;
+
+--Consulta para listar os alunos com alta presença (maior que 90%) e seus desempenhos 
+--DevDg
+
+SELECT nome, frequencia, desempenho
+FROM Aluno
+WHERE frequencia > 90
+ORDER BY frequencia ASC;
+
